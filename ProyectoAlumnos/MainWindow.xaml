@@ -1,0 +1,22 @@
+﻿<Window x:Class="ProyectoAlumnos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="510.075" Icon="Resources/icono-sombrero.png">
+    <Grid Margin="0,0,2,0">
+        <Menu HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="500" RenderTransformOrigin="0.805,0.734">
+            <MenuItem Header="Archivo">
+                <MenuItem x:Name="menuSalir" Header="Salir" Click="menuSalir_Click"/>
+            </MenuItem>
+            <MenuItem Header="Alumno">
+                <MenuItem x:Name="menuAgregar" Header="Agregar" Click="menuAgregar_Click"/>
+                <MenuItem x:Name="menuConsulta" Header="Consulta" Click="menuConsulta_Click"/>
+            </MenuItem>
+            <MenuItem Header="Grupo">
+                <MenuItem x:Name="menuLista" Header="Lista" Click="menuLista_Click"/>
+                <MenuItem x:Name="menuEstadisticas" Header="Estadísticas" Click="menuEstadisticas_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="menuAcercaDe" Header="Acerca de" Click="menuAcercaDe_Click"/>
+        </Menu>
+
+    </Grid>
+</Window>
