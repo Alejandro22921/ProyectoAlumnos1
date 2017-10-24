@@ -56,6 +56,9 @@
     <Compile Include="wCaptura.xaml.cs">
       <DependentUpon>wCaptura.xaml</DependentUpon>
     </Compile>
+    <Compile Include="wConsulta.xaml.cs">
+      <DependentUpon>wConsulta.xaml</DependentUpon>
+    </Compile>
     <Compile Include="wEstadisticas.xaml.cs">
       <DependentUpon>wEstadisticas.xaml</DependentUpon>
     </Compile>
@@ -76,6 +79,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="wCaptura.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wConsulta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
