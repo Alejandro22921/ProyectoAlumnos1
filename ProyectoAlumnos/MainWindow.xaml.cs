@@ -40,7 +40,7 @@ namespace ProyectoAlumnos
 
         private void menuConsulta_Click(object sender, RoutedEventArgs e)
         {
-
+            (new wConsulta()).ShowDialog();
         }
 
         private void menuLista_Click(object sender, RoutedEventArgs e)
@@ -56,6 +56,11 @@ namespace ProyectoAlumnos
         private void menuAcercaDe_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Acerca de...\nCreado por:\nAlejandro Hernández Villa\nIssac Vladimir");
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -9,7 +9,7 @@
         <Label Content="Porcentaje No Aprobados:" HorizontalAlignment="Left" Margin="14,160,0,0" VerticalAlignment="Top" FontSize="20"/>
         <TextBox x:Name="txtPromGeneral" HorizontalAlignment="Left" Height="35" Margin="292,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" FontSize="20" IsEnabled="False"/>
         <Label Content="%" HorizontalAlignment="Left" Margin="565,162,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Button Content="Aceptar" Margin="240,228,240,0" VerticalAlignment="Top" Width="120" FontSize="20" Click="Button_Click"/>
+        <Button Content="Aceptar" Margin="246,219,236,0" VerticalAlignment="Top" FontSize="20" Click="Button_Click" Height="37"/>
         <TextBox x:Name="txtPromAprobados" HorizontalAlignment="Left" Height="35" Margin="292,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" FontSize="20" IsEnabled="False"/>
         <TextBox x:Name="txtPromNoAprobados" HorizontalAlignment="Left" Height="35" Margin="292,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" FontSize="20" IsEnabled="False"/>
         <Label Content="%" HorizontalAlignment="Left" Margin="565,95,0,0" VerticalAlignment="Top" FontSize="20"/>

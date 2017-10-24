@@ -3,14 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Consulta Alumnos" Height="314.925" Width="497.015">
     <Grid Margin="0,0,2,-21">
-        <Button Content="Button" HorizontalAlignment="Left" Margin="193,227,0,0" VerticalAlignment="Top" Width="75" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="32" Margin="127,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" FontSize="20"/>
+        <Button Content="Aceptar" HorizontalAlignment="Left" Margin="215,215,0,0" VerticalAlignment="Top" Width="82" FontSize="20" Height="38" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="127,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" FontSize="20" Name="txtNombre" KeyDown="txtNombre_KeyDown"/>
         <Label Content="Nombre:" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Calificaciones" HorizontalAlignment="Left" Margin="76,84,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Promedio" HorizontalAlignment="Left" Margin="311,84,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <ComboBox HorizontalAlignment="Left" Margin="76,142,0,0" VerticalAlignment="Top" Width="151" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="311,142,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" FontSize="20"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="341,242,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.634,-0.838"/>
+        <ComboBox HorizontalAlignment="Left" Margin="76,142,0,0" VerticalAlignment="Top" Width="151" FontSize="20" Name="cmbCalificaciones"/>
+        <TextBox HorizontalAlignment="Left" Height="33" Margin="311,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" FontSize="20" Name="txtPromedio"/>
 
     </Grid>
 </Window>

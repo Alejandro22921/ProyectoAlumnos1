@@ -23,5 +23,31 @@ namespace ProyectoAlumnos
         {
             InitializeComponent();
         }
+
+        private void txtNombre_KeyDown(object sender, KeyEventArgs e)
+        {
+            string nombre = txtNombre.Text;
+            if (e.Key == Key.Return)
+            {
+                cmbCalificaciones.Items.Clear();
+                try
+                {
+                    Alumno alumno= MainWindow.lista.Find(x =>x.Nombre==nombre);
+                    txtPromedio.Text = Convert.ToString(alumno.Promedio());
+                    foreach(int calificacion in alumno.Calificaciones){
+                        cmbCalificaciones.Items.Add(calificacion);
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Nombre no encontrado");
+                }
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
