@@ -10,6 +10,7 @@
         <Label Content="Promedio" HorizontalAlignment="Left" Margin="311,84,0,0" VerticalAlignment="Top" FontSize="20"/>
         <ComboBox HorizontalAlignment="Left" Margin="76,142,0,0" VerticalAlignment="Top" Width="151" FontSize="20"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="311,142,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="341,242,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.634,-0.838"/>
 
     </Grid>
 </Window>
