@@ -31,19 +31,29 @@ namespace ProyectoAlumnos
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            double promGeneral = 0, contAprobado = 0, contNoAprobado = 0;
-            foreach(Alumno alumno in MainWindow.lista)
+            
+            if (MainWindow.lista.Count == 0)
             {
-                promGeneral += alumno.Promedio();
-                if (alumno.Promedio() > 70)
-                    contAprobado++;
-                else
-                    contNoAprobado++;
+                txtPromGeneral.Text = "0.0";
+                txtPromAprobados.Text = "0.0";
+                txtPromNoAprobados.Text = "0.0";
             }
+            else
+            {
+                double promGeneral = 0, contAprobado = 0, contNoAprobado = 0;
+                foreach (Alumno alumno in MainWindow.lista)
+                {
+                    promGeneral += alumno.Promedio();
+                    if (alumno.Promedio() >= 70)
+                        contAprobado++;
+                    else
+                        contNoAprobado++;
+                }
 
-            txtPromGeneral.Text = Convert.ToString(promGeneral / MainWindow.lista.Count);
-            txtPromAprobados.Text = Convert.ToString(contAprobado / MainWindow.lista.Count);
-            txtPromNoAprobados.Text = Convert.ToString(contNoAprobado / MainWindow.lista.Count);
+                txtPromGeneral.Text = Convert.ToString(promGeneral / MainWindow.lista.Count * 100);
+                txtPromAprobados.Text = Convert.ToString(contAprobado / MainWindow.lista.Count * 100);
+                txtPromNoAprobados.Text = Convert.ToString(contNoAprobado / MainWindow.lista.Count * 100);
+            }
         }
     }
 }
