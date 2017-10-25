@@ -50,7 +50,7 @@ namespace ProyectoAlumnos
                         contNoAprobado++;
                 }
 
-                txtPromGeneral.Text = Convert.ToString(promGeneral / MainWindow.lista.Count * 100);
+                txtPromGeneral.Text = Convert.ToString(promGeneral / MainWindow.lista.Count);
                 txtPromAprobados.Text = Convert.ToString(contAprobado / MainWindow.lista.Count * 100);
                 txtPromNoAprobados.Text = Convert.ToString(contNoAprobado / MainWindow.lista.Count * 100);
             }
